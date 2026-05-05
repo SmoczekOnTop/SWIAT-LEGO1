@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Świat LEGO</title>
+
+<style>
+body {
+  margin:0;
+  font-family:Arial;
+  background: radial-gradient(circle at top,#1b2a4a,#0b132b);
+  color:white;
+  scroll-behavior:smooth;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align:center;
+  padding:70px;
+  background: linear-gradient(90deg,#ff2e2e,#ff6b6b);
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  position:relative;
+  overflow:hidden;
+}
+
+/* delikatne ruchome światło za napisem */
+header::before {
+  content:"";
+  position:absolute;
+  width:250%;
+  height:250%;
+  top:-80%;
+  left:-80%;
+  background: radial-gradient(circle, rgba(255,255,255,0.18), transparent 60%);
+  animation:move 8s linear infinite;
+}
+
+@keyframes move {
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+/* napis */
+header h1 {
+  font-size:60px;
+  margin:0;
+  letter-spacing:1px;
+  position:relative;
+  z-index:2;
+
+  color:#f5f5f5; /* biel ale nie rażąca */
+
+  text-shadow:
+    0 3px 8px rgba(0,0,0,0.9),
+    0 0 18px rgba(255,255,255,0.35),
+    0 0 30px rgba(255,80,80,0.25);
+
+  animation:pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% {transform:scale(1);}
+  50% {transform:scale(1.04);}
+  100% {transform:scale(1);}
+}
+
+/* ===== NAV ===== */
+nav {
+  position:sticky;
+  top:0;
+  background:rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  padding:15px;
+  text-align:center;
+  z-index:1000;
+}
+
+nav a {
+  color:white;
+  margin:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover {
+  color:#ff6b6b;
+}
+
+/* ===== SEKCJE ===== */
+section {
+  padding:60px;
+}
+
+/* ===== KARTY ===== */
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  padding:25px;
+  margin:30px 0;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.1);
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* ===== OBRAZKI ===== */
+img {
+  display:block;
+  width:60%;
+  margin:20px auto;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.6);
+  transition:0.3s;
+}
+
+img:hover {
+  transform:scale(1.05);
+}
+
+.tiny {
+  width:45%;
+}
+
+/* ===== TYTUŁY ===== */
+h1 {
+  text-align:center;
+  margin-bottom:20px;
+  color:#ff6b6b;
+  text-shadow:0 0 15px rgba(255,107,107,0.5);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ŚWIAT LEGO</h1>
+</header>
+
+<nav>
+<a href="#home">Start</a>
+<a href="#historia">Historia</a>
+<a href="#firma">Firma</a>
+<a href="#klocki">Klocki</a>
+<a href="#city">City</a>
+<a href="#starwars">Star Wars</a>
+<a href="#ninjago">Ninjago</a>
+<a href="#technic">Technic</a>
+<a href="#architecture">Architecture</a>
+<a href="#najwiekszy">Największy</a>
+<a href="#podsumowanie">Podsumowanie</a>
+</nav>
+
+<section id="home">
+<div class="card">
+<p>LEGO stanowi jedno z najbardziej rozpoznawalnych zjawisk w historii współczesnej kultury materialnej. System klocków konstrukcyjnych, oparty na prostych zasadach łączenia elementów, umożliwia tworzenie niezwykle złożonych struktur, rozwijając jednocześnie zdolności manualne, wyobraźnię przestrzenną oraz kompetencje logiczne użytkowników.</p>
+<p>W niniejszym opracowaniu przedstawiono szczegółową analizę historii przedsiębiorstwa, charakterystyki jego działalności oraz omówienie najważniejszych serii produktowych. Każda sekcja zawiera pogłębiony opis wraz z przykładami zestawów oraz ich znaczeniem w rozwoju marki.</p>
+</div>
+</section>
+
+<section id="historia">
+<div class="card">
+<p>Historia LEGO rozpoczyna się w pierwszej połowie XX wieku i stanowi przykład dynamicznego rozwoju przedsiębiorstwa rodzinnego. Założyciel firmy, Ole Kirk Christiansen, początkowo zajmował się produkcją przedmiotów codziennego użytku, by z czasem skoncentrować się na tworzeniu zabawek.</p>
+<p>Wprowadzenie tworzyw sztucznych umożliwiło firmie opracowanie innowacyjnego systemu konstrukcyjnego, który zrewolucjonizował rynek. Patent z 1958 roku zagwarantował trwałość oraz uniwersalność elementów, co przyczyniło się do globalnego sukcesu marki.</p>
+<p>Na przestrzeni lat LEGO przeszło liczne transformacje, obejmujące rozwój nowych technologii produkcji, ekspansję międzynarodową oraz dywersyfikację oferty produktowej.</p>
+</div>
+</section>
+
+<section id="firma">
+<div class="card">
+<p>LEGO Group to globalna korporacja, której działalność obejmuje szeroki zakres sektorów, w tym produkcję zabawek, branżę rozrywkową oraz edukacyjną. Firma zatrudnia tysiące pracowników i posiada zakłady produkcyjne rozmieszczone w różnych częściach świata.</p>
+<p>Strategia przedsiębiorstwa opiera się na ciągłym doskonaleniu produktów oraz inwestycjach w badania i rozwój. LEGO aktywnie promuje ideę nauki poprzez zabawę, współpracując z instytucjami edukacyjnymi.</p>
+<p>Ważnym elementem działalności są również parki rozrywki LEGOLAND oraz produkcje filmowe i gry komputerowe.</p>
+</div>
+</section>
+
+<section id="klocki">
+<div class="card">
+<p>Klocki LEGO stanowią system modularny o wysokiej precyzji wykonania. Każdy element jest projektowany z uwzględnieniem rygorystycznych norm jakościowych, co zapewnia ich pełną kompatybilność niezależnie od roku produkcji.</p>
+<p>Wyróżnia się wiele kategorii elementów, w tym klasyczne cegiełki, komponenty techniczne oraz elementy specjalistyczne wykorzystywane w zaawansowanych konstrukcjach.</p>
+<p>Dzięki temu użytkownicy mogą tworzyć zarówno proste modele, jak i skomplikowane struktury inżynieryjne. Przykładowy zestaw z tej kategorii to zestaw o numerze 10698, który przedstawia klasyczny zestaw kreatywny z różnorodnymi klockami.</p>
+<img src="img/klocki.jpg">
+</div>
+</section>
+
+<section id="city">
+<div class="card">
+<p>Seria LEGO City koncentruje się na odwzorowaniu rzeczywistości miejskiej, obejmując takie elementy jak infrastruktura transportowa, służby publiczne oraz codzienne życie mieszkańców.</p>
+<p>Zestawy umożliwiają budowę kompleksowych makiet miast, w których użytkownik może symulować różnorodne scenariusze społeczne.</p>
+<p>Popularne zestawy obejmują komisariaty policji, remizy strażackie oraz porty lotnicze. Przykładowy zestaw z tej serii to model o numerze 60316, który przedstawia komisariat policji wraz z pojazdami i minifigurkami funkcjonariuszy.</p>
+<img src="img/city.jpg" class="tiny">
+</div>
+</section>
+
+<section id="starwars">
+<div class="card">
+<p>Seria LEGO Star Wars stanowi przykład udanej integracji dwóch rozpoznawalnych marek. Modele przedstawiają statki kosmiczne, pojazdy oraz postacie z uniwersum filmowego.</p>
+<p>Zestawy charakteryzują się wysokim poziomem szczegółowości oraz dużą liczbą elementów, co czyni je atrakcyjnymi dla kolekcjonerów.</p>
+<p>Najbardziej znane modele to Millennium Falcon oraz Star Destroyer. Przykładowy zestaw z tej serii to model o numerze 75192, który przedstawia legendarny statek Millennium Falcon.</p>
+<img src="img/starwars.jpg">
+</div>
+</section>
+
+<section id="ninjago">
+<div class="card">
+<p>Ninjago to seria o charakterze narracyjnym, w której przedstawiono historię wojowników ninja walczących z siłami zła.</p>
+<p>Produkty obejmują pojazdy, świątynie oraz fantastyczne stworzenia, takie jak smoki.</p>
+<p>Popularność serii wzrosła dzięki serialowi animowanemu oraz rozbudowanemu uniwersum fabularnemu. Przykładowy zestaw z tej serii to model o numerze 71721, który przedstawia smoka czarodzieja.</p>
+<img src="img/ninjago.jpg">
+</div>
+</section>
+
+<section id="technic">
+<div class="card">
+<p>LEGO Technic reprezentuje zaawansowany segment konstrukcyjny, umożliwiający budowę modeli wyposażonych w mechanizmy ruchome.</p>
+<p>Elementy takie jak przekładnie, silniki oraz układy pneumatyczne pozwalają na tworzenie realistycznych konstrukcji inżynieryjnych.</p>
+<p>Seria ta jest szczególnie ceniona przez starszych użytkowników oraz pasjonatów techniki. Przykładowy zestaw z tej serii to model o numerze 42083, który przedstawia samochód Bugatti Chiron.</p>
+<img src="img/technic.jpg">
+</div>
+</section>
+
+<section id="architecture">
+<div class="card">
+<p>Seria Architecture skupia się na odwzorowywaniu znanych budowli i struktur urbanistycznych.</p>
+<p>Modele cechują się dużą dbałością o szczegóły oraz estetykę wykonania, co sprawia, że pełnią również funkcję dekoracyjną.</p>
+<p>Wśród zestawów znajdują się repliki takich obiektów jak Wieża Eiffla czy Statua Wolności. Przykładowy zestaw z tej serii to model o numerze 21046, który przedstawia Empire State Building.</p>
+<img src="img/architecture.jpg" class="tiny">
+</div>
+</section>
+
+<section id="najwiekszy"> 
+<div class="card">
+<p>Największe zestawy LEGO składają się z tysięcy elementów i stanowią wyzwanie konstrukcyjne nawet dla doświadczonych użytkowników.</p>
+<p>Ich budowa wymaga cierpliwości, precyzji oraz zdolności planowania.</p>
+<p>Stanowią one jednocześnie przykład możliwości systemu LEGO oraz jego potencjału konstrukcyjnego. Przykładowy zestaw to model o numerze 31203, który przedstawia mapę świata zbudowaną z klocków LEGO.</p>
+<img src="img/mapa.jpg">
+</div>
+</section>
+
+<section id="podsumowanie">
+<div class="card">
+<p>LEGO to nie tylko zabawka, lecz kompleksowy system edukacyjny i kreatywny, który znajduje zastosowanie w różnych dziedzinach życia.</p>
+<p>Jego uniwersalność oraz trwałość sprawiają, że pozostaje aktualny mimo upływu czasu.</p>
+<p>Stanowi doskonały przykład połączenia innowacyjności, jakości oraz wartości edukacyjnych.</p>
+</div>
+</section>
+
+<footer class="credit">
+  DESIGNED BY SMOCZEK
+</footer>
+
+</body>
+</html>
